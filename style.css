@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #22245b;
+    --secondary-color: #373b69;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1366px;
+    height: 100%;
+    overflow: hidden;
+
+    /*overflow: hidden;*/
+    margin: 0 auto;
+}
+
+header h1{
+
+    font-size: 24px;
+    color: #fff;
+}
+.element{
+    width: 60px;
+    height: 60px;
+    background-color: blueviolet;
+
+    /*margin: 2px 2px;*/
+}
+
+.map_container{
+    max-width: 1140px;
+    height: 16;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+
+/* moving elements*/
+.entity-player{
+    background: url("/images/sokoban_source_player.png")!important;
+}
+
+.entity-block{
+
+    background: url("/images/sokoban_source_block.png");
+}
+
+.entity-block-goal{
+    /* block gdy block trafi na prawidlowe miejsce zmienia kolor*/
+    background: url("/images/sokoban_source_goal_block.png");
+
+}
+/* static elements*/
+
+.tile-wall{
+    background: url("/images/sokoban_source_wall.png");
+}
+
+.tile-space{
+    background: url("/images/sokoban_source_space.png");
+}
+
+.tile-goal{
+    background: url("/images/sokoban_source_goal_spot.png");
+}
+
+.winner{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 3%;
+    left: 50%;
+    margin-left: -100px;
+
+    color: darkmagenta;
+    border: 2px solid #373b69;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
